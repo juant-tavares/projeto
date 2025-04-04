@@ -26,6 +26,27 @@ app.get('/login', (req, res) => {
     res.sendFile(__dirname + "/pages/login.html");
 })
 
+app.get('/cadastro', (req, res) => {
+    console.log(req);
+    res.status(200);
+    res.setHeader("Content-type", "text/html");
+    res.sendFile(__dirname + "/pages/register.html");
+})
+
+app.get('/esqueci-senha', (req, res) => {
+    console.log(req);
+    res.status(200);
+    res.setHeader("Content-type", "text/html");
+    res.sendFile(__dirname + "/pages/forgot-password.html");
+})
+
+app.get('/dashboard', (req, res) => {
+    console.log(req);
+    res.status(200);
+    res.setHeader("Content-type", "text/html");
+    res.sendFile(__dirname + "/pages/charts.html");
+})
+
 app.listen(port, () => {
     console.log(`App de exemplo esta rodando na porta ${port}`)
 })
