@@ -1,4 +1,4 @@
-// ACESSO NO NAVEGADOR: http://127.0.0.1:3000/
+// ACESSO PELO NAVEGADOR: http://127.0.0.1:3000/
 
 const { createServer } = require('node:http');
 const express = require("express");
